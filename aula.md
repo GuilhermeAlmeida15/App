@@ -27,8 +27,29 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 -constantes
 
 ## Tipos de dados
-- string(texto "" '' ´´)
-- number( numeros 2 , 1,4 ...)
+- [x] string(texto "" '' ´´)
+- [x] number( numeros 2 , 1,4 ...)
+- [x] Boolean: true , false
+
 
 ## operadores
-- operadores de atribuição de valores
+- [x] operadores de atribuição de valores
+- [x] operador de concatenação
+
+## estrutura de dados:
+
+## arrays:
+- [x] uma lista que contém qualquer tipo de dado
+
+# objetos:
+- [x] atributos e métodos
+- [x] criação e manipulação de objetos
+- [x] acesso a propriedades de objeto
+
+
+## Functions
+- [x] criar
+- [x] executar
+- [x] arrow function / named function
+
+

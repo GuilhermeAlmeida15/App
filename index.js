@@ -1,3 +1,12 @@
-// hellow world //
+//array, objetos
+ let meta = 
+ {
+    value:"Ler um livro por dia",
+    checked: false
 
-console.log("olá mundo")
+ }
+ console.log(meta.value)
+
+ //functions
+
+ //const CriarMeta = () =>{}
