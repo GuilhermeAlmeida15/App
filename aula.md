@@ -55,3 +55,8 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 
 ## estrutura de repetição
 - [x]while
+
+
+
+## condicionais
+- [x]switch
