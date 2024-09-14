@@ -53,3 +53,5 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 - [x] arrow function / named function
 
 
+## estrutura de repetição
+- [x]while
