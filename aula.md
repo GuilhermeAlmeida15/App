@@ -60,3 +60,8 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 
 ## condicionais
 - [x]switch
+
+
+## modules em node.js
+- [x] importação de módulos ( require, commonjs)
+- [x] biblioteca 'inquirer' para criar prompts interativos

@@ -1,7 +1,30 @@
-const start = () =>{
+const { select } = require('@inquirer/prompts')
+
+const start = async () =>{
   
   while(true){
-     let opcao = 1
+    const opcao = await select({
+      message: "Menu >",
+      choices:[
+
+         {
+            name:"Cadastar Meta",
+            value: "Cadastrar"
+         },
+         {
+            name: "Listar metas",
+            value: "Listar"
+         },
+         {
+            name: "Sair",
+            value: "Sair"
+
+         },
+      ]
+    }) 
+
+
+
      switch(opcao){
 
          case "Cadastrar":
@@ -13,7 +36,9 @@ const start = () =>{
          break
 
          case "Sair":
+            console.log("Até a Próxima!")
             return
+
      }
 
   }
