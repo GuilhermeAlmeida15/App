@@ -35,6 +35,7 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 ## operadores
 - [x] operadores de atribuição de valores
 - [x] operador de concatenação
+- [x] operadores de comparação( ==, != ,<= , =>, < > )
 
 ## estrutura de dados:
 
@@ -60,8 +61,12 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 
 ## condicionais
 - [x]switch
-
-
+- [x] if
+- [x] else
 ## modules em node.js
 - [x] importação de módulos ( require, commonjs)
 - [x] biblioteca 'inquirer' para criar prompts interativos
+
+
+## Programação assincronas e Promises:
+-[x] uso de funções assincronas( async/await)
