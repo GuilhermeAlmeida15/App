@@ -1,13 +1,27 @@
-const { select,input,checkbox} = require('@inquirer/prompts')
+const { select,input,checkbox} = require('@inquirer/prompts');
+const { error } = require('console');
+const fs = require("fs").promises
+
 
 let mensagem = "Bem - Vindo ao app de metas";
-let meta = {
-   value:"tomar 3l de água por dia",
-   checked: false,
+
+
+let metas 
+
+const CarregarMetas = async () =>{
+   try{
+         const dados = await fs.readFile("metas.json","utf-8")
+         metas = JSON.parse(dados)
+   }
+      catch(erro) {
+         metas = []
+      }
+
 }
-
-let metas = [meta]
-
+   const salvarmetas = async () =>{
+     await fs.writeFile("metas.json", JSON.stringify(metas, null, 2))
+   }
+   
 
 
 const CadastrarMeta = async () =>{
@@ -23,6 +37,14 @@ const CadastrarMeta = async () =>{
 }
 
 const ListarMetas = async () =>{
+
+   if(metas.length == 0) {
+      mensagem = "Não existem metas"
+      return
+
+   }
+
+
    const respostas = await checkbox({ 
 
       message:"Use as setas para mudar de meta, o espaço para marcar ou desmarcar e o enter para finalizar essa etapa",
@@ -55,6 +77,14 @@ const ListarMetas = async () =>{
 }
 
    const MetasRealizadas = async () => {
+
+      if(metas.length == 0) {
+         mensagem = "Não existem metas"
+         return
+   
+      }
+   
+
          const realizadas = metas.filter((meta) => {
             return meta.checked
          })
@@ -72,6 +102,14 @@ const ListarMetas = async () =>{
 
 
    const MetasAbertas = async () =>{
+
+      if(metas.length == 0) {
+         mensagem = "Não existem metas"
+         return
+   
+      }
+   
+
          const abertas = metas.filter((meta) => {
             return meta.checked != true
          })
@@ -90,6 +128,15 @@ const ListarMetas = async () =>{
 
 
    const DeletarMetas = async () =>{
+
+      if(metas.length == 0) {
+         mensagem = "Não existem metas"
+         return
+   
+      }
+   
+
+
       const MetasDesmarcadas = metas.map((meta) => {
          return{ value: meta.value , checked: false}
 
@@ -127,9 +174,14 @@ const ListarMetas = async () =>{
 
 
 const start = async () =>{
-  
+  await CarregarMetas()
+   
+
   while(true){
     MostrarMensagem()
+    await salvarmetas()
+
+
     const opcao = await select({
       message: "Menu >",
       choices:[
