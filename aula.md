@@ -36,11 +36,13 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 - [x] operadores de atribuição de valores
 - [x] operador de concatenação
 - [x] operadores de comparação( ==, != ,<= , =>, < > )
+- [x] spread operator (...)
 
 ## estrutura de dados:
 
 ## arrays:
 - [x] uma lista que contém qualquer tipo de dado
+- [x] métodos de arrays: push , find, forEach
 
 # objetos:
 - [x] atributos e métodos
