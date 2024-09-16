@@ -18,13 +18,13 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 
 
 ## Fases de resolução de problemas
-- coleta de dados
-- processar os dados(manipular, alterar ....)
-- apresentar os dados
+-[x] coleta de dados
+-[x] processar os dados(manipular, alterar ....)
+-[x] apresentar os dados
 
 ## escopo e variáveis
--variáveis globais e locais
--constantes
+-[x] variáveis globais e locais
+-[x] constantes
 
 ## Tipos de dados
 - [x] string(texto "" '' ´´)
@@ -42,7 +42,7 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 
 ## arrays:
 - [x] uma lista que contém qualquer tipo de dado
-- [x] métodos de arrays: push , find, forEach
+- [x] métodos de arrays: [push , find, forEach, filter, map]
 
 # objetos:
 - [x] atributos e métodos
