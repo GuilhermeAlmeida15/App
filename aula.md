@@ -1,14 +1,14 @@
 ## Linguagem de Progamação
 
-    maneira de dar instruções ao computador.
-como um lego, você irá utilizar peças para criar algoritimos, ou seja, para resolver problemas.
+- maneira de dar instruções ao computador.
+- como um lego, você irá utilizar peças para criar algoritimos, ou seja, para resolver problemas.
 
 ## Algoritimos 
 -> Sequencia de passos lógicos e físicos para resolução de problemas.
 
 
 ## Peças de uma linguagem
-- [x]comentários
+- comentários
 - declaração de variáveis(const,let)
 - operadores(atribuição,concatenação, matemáticos e lógicos)
 - tipos de dados(string,number, booleam)
@@ -34,7 +34,7 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 
 ## operadores
 - [x] operadores de atribuição de valores
-- [x] operador de concatenação
+- [x] operador de concatenação ( + )
 - [x] operadores de comparação( ==, != ,<= , =>, < > )
 - [x] spread operator (...)
 
@@ -58,6 +58,8 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 
 ## estrutura de repetição
 - [x]while
+- for
+- do-while
 
 
 
@@ -65,6 +67,8 @@ como um lego, você irá utilizar peças para criar algoritimos, ou seja, para r
 - [x]switch
 - [x] if
 - [x] else
+
+
 ## modules em node.js
 - [x] importação de módulos ( require, commonjs)
 - [x] biblioteca 'inquirer' para criar prompts interativos
